@@ -1,0 +1,11 @@
+{
+    "name": "Go Dev Environment",
+    "image": "golang:latest",
+    "customizations": {
+      "vscode": {
+        "settings": {},
+        "extensions": ["golang.go"]
+      }
+    },
+    "postCreateCommand": "go mod init go-course-notes && go mod tidy"
+  }
